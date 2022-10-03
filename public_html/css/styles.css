@@ -11,7 +11,20 @@
     position: relative;
 } */
 
-/* .banner {
-    position: relative;
-    z-index: 6;
-} */
+.banner {
+    background: linear-gradient(
+        45deg, #213458, #1D7D81);
+    padding: 1.5rem;
+}
+
+.logo {
+    width: 18rem;
+    margin: auto;
+    padding: auto;
+}
+
+.securePay {
+    width: 10rem;
+    margin: auto;
+    padding: auto;
+}
