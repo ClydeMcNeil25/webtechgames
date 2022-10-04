@@ -40,7 +40,7 @@
     width: 10rem;
 }
 
-h1, h2, h3, h4, h5, p {
+p {
     font-size: 100%;
 }
 
@@ -49,6 +49,27 @@ h1, h2, h3, h4, h5, p {
     color: white;
 }
 
+form {
+    width: 50rem;
+}
+
+#navbarNav {
+    direction: rtl;
+}
+
+.socials {
+    width: 2rem;
+}
+
+a, u {
+    text-decoration: none;
+  }
+
+/* hr {
+    width: 25%;
+    margin-left: 25%;
+    margin-right: 25%;
+} */
 /* .regImg {
     width: 25rem;
 } */
