@@ -8,18 +8,38 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
         <!-- My CSS -->
         <link rel="stylesheet" href="./css/styles.css" type="text/css" />
+        <!-- Browser Favicon  -->
+        <link rel="icon" href="./images/browserLogo.png"/>
     <title>Web Tech Games</title>
 </head>
 
 <body>
 
-    <header class="navBg"><nav class="">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="./images/Logo.png" alt="Logo" class="d-inline-block align-text-top logo">
-        </a>
-      </div>
-    </nav></header>
+    <header class="navBg">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./images/Logo.png" alt="Logo" class="d-inline-block align-text-top logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Disabled</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
 
     <div id="carouselExampleCaptions" class="carousel slide lpPic" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -79,28 +99,27 @@
       </div>
 
       <hr class="container">
-
-      <div class="container-fluid my-5">
-        <h2 class="text-center mb-5">Gaming Furniture</h2>
-          <div class="row gap-1 d-flex justify-content-center">
+      <h2 class="text-center mb-5">Gaming Furniture</h2>
+      <div class="container-fluid my-5 ">
+          <div class="row text-center">
             <div class="col-md-3">
               <a href="https://esportsfurniturestore.com/collections/shop-gaming-desks/products/techni-sport-gaming-desk-warrior" target="_top">
-                <img src="https://cdn.shopify.com/s/files/1/0409/5577/3086/products/TS220L-WHT-dark_1800x1800_39e2a0cc-3666-4b58-9666-a5f21bb862c0_900x.jpg?v=1594517037" class="w-100" alt="eSports Gaming Desk"/></a>
+                <img src="https://cdn.shopify.com/s/files/1/0409/5577/3086/products/TS220L-WHT-dark_1800x1800_39e2a0cc-3666-4b58-9666-a5f21bb862c0_900x.jpg?v=1594517037" class="w-75" alt="eSports Gaming Desk"/></a>
                 <h3 class="text-center">Techni Sport Gaming Desk - Warrior</h3>
             </div>
             <div class="col-md-3">
               <a href="https://esportsfurniturestore.com/collections/under-200/products/esf256-racing-gaming-chair" target="_top">
-                <img src="https://cdn.shopify.com/s/files/1/0409/5577/3086/products/ESF256-Racing-Gaming-Chair-1_360x.jpg?v=1647226145" class="w-100" alt="eSports Gaming Desk"/></a>
+                <img src="https://cdn.shopify.com/s/files/1/0409/5577/3086/products/ESF256-Racing-Gaming-Chair-1_360x.jpg?v=1647226145" class="w-75" alt="eSports Gaming Desk"/></a>
                 <h3 class="text-center">ESF256 Racing Gaming Chair</h3>
             </div>
             <div class="col-md-3">
               <a href="https://esportsfurniturestore.com/collections/under-200/products/esf256-racing-gaming-chair" target="_top">
-                <img src="https://cdn.shopify.com/s/files/1/0409/5577/3086/products/ESF256-Racing-Gaming-Chair-1_360x.jpg?v=1647226145" class="w-100" alt="eSports Gaming Desk"/></a>
+                <img src="https://cdn.shopify.com/s/files/1/0409/5577/3086/products/ESF256-Racing-Gaming-Chair-1_360x.jpg?v=1647226145" class="w-75" alt="eSports Gaming Desk"/></a>
                 <h3 class="text-center">ESF256 Racing Gaming Chair</h3>
             </div>
             <div class="col-md-3">
               <a href="https://esportsfurniturestore.com/collections/under-200/products/esf256-racing-gaming-chair" target="_top">
-                <img src="https://cdn.shopify.com/s/files/1/0409/5577/3086/products/ESF256-Racing-Gaming-Chair-1_360x.jpg?v=1647226145" class="w-100" alt="eSports Gaming Desk"/></a>
+                <img src="https://cdn.shopify.com/s/files/1/0409/5577/3086/products/ESF256-Racing-Gaming-Chair-1_360x.jpg?v=1647226145" class="w-75" alt="eSports Gaming Desk"/></a>
                 <h3 class="text-center">ESF256 Racing Gaming Chair</h3>
             </div>
           </div>
@@ -125,17 +144,173 @@
         </div>
 
 <!-- Terms of Service -->
-<div class="container border w-25 p-3 d-flex justify-content-center">
-<a href=""><p class="text-black">About</p></a>
-<a href=""><p class="text-black">Terms</p></a>
-<a href=""><p class="text-black">Blog</p></a>
-</div>
 
+<!-- Modals -->
+<div class="container p-3 d-flex justify-content-center" id="tos">
+  <div class="row">
+      <!-- About Modal -->
+    <div class="col-md-3">
+      <a href="#" data-bs-toggle="modal" data-bs-target="#aboutBackdrop">
+        <p class="text-black">About</p>
+      </a>
+        <div class="modal fade" id="aboutBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="aboutLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header navBg">
+                <h1 class="modal-title fs-5" id="aboutLabel">About This Site</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body text-black">
+                Discover the best products on Amazon, curated by a community with great taste. Canopy features beautiful and functional products, you can actually buy. We bring boutique curation to the Internet’s largest catalog.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary button" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- Terms Modal -->
+    <div class="col-md-3">
+      <a href="#" data-bs-toggle="modal" data-bs-target="#termsBackdrop">
+        <p class="text-black">Terms</p>
+      </a>
+        <div class="modal fade" id="termsBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="termsBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-xl modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header navBg">
+                <h1 class="modal-title fs-5" id="termsBackdropLabel">Terms of Service</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body text-black">
+                <p>This page explains the terms by which you may use Canopy (the “Web Site”). Canopy's is to help you discover amazing products which are all available on Amazon. It's curated by a community with great taste. By accessing or using our Web Site, you agree that you have read, understood, and agree to be bound by these Terms of Use (the "Agreement"), whether or not you are a registered user of our Web Site. This Term of Use Policy may change from time to time, and we reserve the right to make said changes. You will be notified of changes either on this page (canopy.co/terms) or by a direct notice (including, for certain services, email notification of privacy policy changes). If you reject the changes, you can delete your account by going to your profile, clicking the "Edit" button, then following the "Delete my account" link. Your continued use of the Service after any such change takes effect constitutes your acceptance of the new Terms of Use. If you do not agree to any of these terms or any future Terms of Use, your only remedy shall be to not use or access (or continue to access) the Service. This Agreement applies to all visitors, users, and others who access the Web Site.</p>
+                
+                <p>By using Web Tech Games, you understand that all submissions are added by our community of users directly from its affiliates. Web Tech Games is not responsible for accuracy, usefulness, safety or intellectual property rights of or relating to any products from its affiliates, on Web Tech Games.</p>
+                
+                
+                <p>Furthermore, Canopy is not responsible for submissions that are inaccurate, offensive, indecent or objectionable, therefore all users must waive any legal or equitable rights against Canopy with respect thereto to indemnify and hold Canopy, it’s users and stakeholders.</p> 
+                
+                <p>Canopy’s responsibility
+                Canopy’s responsibility to the site’s content and comments of its members will under no circumstances be liable for offensive, inaccurate or defective content and/or product recommendations. Canopy cannot monitor all product recommendations or comments made to the site, but will still, however, reserve the right to delete or edit any material to recommendations and/or comments that are obscene, offensive or otherwise objectionable in keeping up the standards of the Web Site. If Canopy chooses to edit or remove a recommendation or comment, it does not assume full responsibility of the content of the particular post.</p>
+
+                <p>Prices from Amazon may fluctuate over time. Canopy will not be responsible for price accuracy on recommended products featured on the Web Site. Canopy will also not be responsible for product availability, purchasing from Amazon and subsequent shipping and distribution.</p>
+
+                <p>Canopy was designed for, and is intended for use on the desktop mobile web in accordance with the rules and regulations Associates Program Participation Requirements. Canopy is identified as a participant of Amazon’s Associated program, therefore by adding product recommendations to Canopy, you are granting Canopy and its owners to earn advertising fees from qualifying products made by end users through the Associates Program offered by Amazon.com, Inc. or its affiliates.</p>
+
+                <p>Visitor and Member responsibility 
+                  Members and visitors of/to Canopy must adhere to certain standards of behaviour. You agree not to post or otherwise make:</p>
+
+                Posts that harass, degrade, intimidate or are hateful toward an individual or group of individuals on the basis of religion, gender, sexual orientation, race, ethnicity, age, or disability;
+                Posts that include personal or identifying information about another person without that person’s explicit consent.
+
+                Posts that infringe any proprietary rights, including copyright, of any party, or Postings that you do not have a right to make available;
+
+                Posts that are unlawful, harmful, threatening, abusive, harassing, defamatory, pornographic, libelous, or invasive of another’s privacy, or harmful to minors in any way;
+
+                Posts that are false, deceptive, misleading, deceitful, misinformative, constitute “bait and switch” or impersonation of any person or entity;
+
+                Posts that relate to products that are pornographic in nature.
+
+                Posts restrict or inhibit any other user from using and enjoying the Web Site
+                Canopy retains the right to delete any member account without notice for first-time or continued violations of these terms, or any other reason.
+
+                Copyright
+                The images made available to you by Amazon.com, Inc. or its affiliates and Canopy are protected by copyright and trademark laws of Canada, the United States and other countries. Before using product images for any purpose other than recommending on Canopy, you may need to obtain the authorization of the original owner of the materials. It is your responsibility to obtain authorizations to use product images or text that may be required; Canopy cannot and will not give you this authorization. We cannot guarantee that Canopy will not locate unintended or objectionable content and Canopy accepts no responsibility or liability for the content of any images or text included in any Canopy product features.
+                
+                If a product image is disclosed as a third party vendor's exclusive intellectual property, it will be removed immediately upon request sent directly to hello@canopy.co.
+                
+                Liability
+                In no event shall Canopy be liable to you or any third party for any indirect, consequential, exemplary, incidental, special or punitive damages, including lost profit damages arising from your use of the Web Site, even if Canopy has been advised of the possibility of such damages, notwithstanding anything to the contrary contained herein.
+
+                Disputes
+                If there are any disputes about or involving the Web Site or service, you agree that the dispute shall be governed by the laws of the Ontario, Canada.
+
+                Indemnity
+                You agree to indemnify and hold Canopy, its subsidiaries, and affiliates, and their respective officers, agents, partners and employees, harmless from any loss or liability arising out of your use of the Web Site or from any claim, or demand, including reasonable attorneys’ fees, made by any third party due to or arising out of your use of the sites in violation of these terms of service and/or any breach of your representations, warranties and obligations set forth above and/or if any content that you post in Product Recommendations on or through the sites causes Canopy to be liable to another.
+
+                Acceptance
+                By using or visiting this Web Site, you signify your assent to the Terms of Use and our Privacy Policy. If you do not agree to any of these terms, then please refrain from visiting Canopy or becoming a member of our community.
+
+                Questions or concerns? Please contact our Designated Terms of Use and Privacy Policy Agent Shannon Fox at privacy@canopy.co or at:
+
+                Canopy Team
+                c/o Shannon Fox
+                119 Spadina Ave. Suite 1203
+                Toronto, ON M5V 2L1
+                CANADA
+                
+                Canopy is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary button" data-bs-dismiss="modal">Understood</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+      <a href="#" data-bs-toggle="modal" data-bs-target="#privacyBackdrop">
+        <p class="text-black">Privacy</p>
+      </a>
+        <div class="modal fade" id="privacyBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="privacyLabel" aria-hidden="true">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+              <div class="modal-header navBg">
+                <h1 class="modal-title fs-5" id="privacyLabel">Privacy</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body text-black">
+                Privacy Policy
+                Last updated on May 21, 2014
+                Policy purpose
+                Canopy App (“Canopy”) provides this Privacy Policy to inform you of our policies and procedures for the collection, use and disclosure of personal information we receive from users of canopy.co (this “Site”). This Privacy Policy only applies to information you provide to us through the Site.
+                This Privacy Policy may change from time to time. We will not reduce your rights under this Privacy Policy without your consent. We will post all privacy policy changes on this page canopy.co/privacy. If changes are significant, we will provide a more prominent notice (including, for certain services, email notification of privacy policy changes).
+                Information we collect
+                We will create your Account based upon the Personal Information you provide, and you will become a Member of Canopy. Your Personal Information will be used to provide our service. Canopy collects and stores all information provided by its visitors and members. This includes, but is not limited to: registration information, profile activity, IP addresses, referral pages, service behavior, and traffic data. We will not log your information or behavior on other third party applications unrelated to Canopy.
+                All Members may review, update, correct or delete Personal Information in their Account by editing such profile via the Site. If you completely delete all such information, then your Account may become deactivated. We will make efforts to honor your request. We may retain an archived copy of your records as required by law or for legitimate business purposes.
+                Your data
+                Your data serves the following functions:
+                Allows Canopy to better understand Site usage and subsequently improve content, functionality, and features of the Site.
+                Information you provide to Canopy may be used for Customer Service, Accounting, and New Product Promotion. Canopy may use aggregate or anonymous information which will not be linked to identified individuals for various other uses for itself and third parties.
+                Third parties
+                We will not share your personal information with any third parties for direct marketing purposes. We will only disclose personal information to third parties if we are required to by applicable laws, regulations, or legal and regulatory processes, or if there is a sale, merger, transfer, or exchange of control of Canopy to another company.
+                We may share consolidated non-personally-identifiable data that does not include Personal Information and we may otherwise disclose Log Data with third parties for industry analysis, demographic profiling and other purposes. Any aggregated information shared in these contexts will not contain your specific Personal Information.
+                By request, individuals may review their Personal Information or logged site behavior contained in Canopy files by contacting the Canopy Privacy Officer. All requests for this data will be provided within a 30 day period. If an individual believes any of their personal information is inaccurate, we will make appropriate corrections.
+                Canopy may also provide your Personal Information to our consultants, subcontractors, and professional advisers (which shall be bound by privacy obligations) to assist our uses disclosed herein. We use subcontractors located in United States of America and Canada to process personal information for Data Backup and Customer Record Keeping, therefore your information may be transferred to and stored on computers located outside of your province, state, or country. Your consent to this Privacy Policy followed by your submission of such information represents your agreement to that transfer. More information can be obtained from our Privacy Officer.
+                External links
+                Our Site contains links to Amazon. If you choose to purchase a product by "clicking on" a product on Canopy you will be directed to Amazon’s website. We do not take responsibility for cookies or other files that could be placed on your computer by Amazon. We encourage you to read Amazon's privacy policy if you have concerns with their behavior.
+                Membership
+                When you register as a member of Canopy, you are agreeing to receive emails and in-system notices for announcements, newsletters, recommendations and policy updates. If you would like to opt out of our emails, please contact the privacy officer at privacy@canopy.co, or follow up unsubscribe link on those emails.
+                Canopy reserves the right to delete your account without notice, for legitimate business reasons. In the unlikely even that this occurs, we will provide an email notification with further details.
+                Membership termination
+                If you would like your public profile and membership with Canopy terminated, log in, go to your profile and click the "Edit" button. Then follow the "Delete my account" link.
+                The Public and the Community
+                Non members (the “Public”) and members of Canopy will be able to view your public profile, including: your first name, surname, Canopy username, personal website, users you follow, followers, liked items, and number of items liked.
+                If you have any questions about this Policy or any of the context described, please contact us at:
+                Canopy Team
+                c/o Shannon Fox
+                119 Spadina Ave. Suite 1203
+                Toronto, ON M5V 2L1
+                CANADA
+                or send us an email at privacy@canopy.co.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary button" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+      <a href="https://webtechgames.wordpress.com/"><p class="text-black">Blog</p></a>
+    </div>
+  </div>
+</div>
 <!-- Contact Form -->
-        <section class="contact-form lead text-white p-1 lead d-flex justify-content-center" id="contact-me">
-          <form method="POST" class="p-2" action="https://formsubmit.co/krucial.studios.llc@gmail.com" enctype="multipart/form-data">
+        <section class="contact-form lead text-white d-flex justify-content-center" id="contact-me">
+          <form method="POST" class="w-50" action="https://formsubmit.co/krucial.studios.llc@gmail.com" enctype="multipart/form-data">
               <h1 class="contact-title text-center pb-2">Contact Us</h1>
-              <div class="row d-flex">
+              <div class="text-start row">
                   <div class="col-md-6 vstack mb-2">
                       <label for="firstname" class="form-label text-white">First Name</label>
                       <input class="form-control" id="firstname" name="firstname" type="text" placeholder="First Name"/>
@@ -145,7 +320,7 @@
                       <input class="form-control" id="lastname" name="lastname" type="text" placeholder="Last Name"/>
                   </div>
               </div>
-              <div class="row d-flex">
+              <div class="text-start row">
               <div class="col-md-6 vstack mb-2">
                       <label for="emailInput" class="form-label text-white">Email Address</label>
                       <input type="email" class="form-control" id="emailInput" name="email" placeholder="Your email"/>
@@ -170,8 +345,6 @@
           </form>
         </section>
       </footer>
-
-
     <!-- My JavaScript -->
 <script src="./js/script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>

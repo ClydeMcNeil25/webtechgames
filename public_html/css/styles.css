@@ -18,7 +18,7 @@
 }
 
 .logo {
-    width: 18rem;
+    width: 11.5rem;
     margin: auto;
     padding: auto;
 }
@@ -38,6 +38,15 @@
 
 .affiliateImages {
     width: 10rem;
+}
+
+h1, h2, h3, h4, h5, p {
+    font-size: 100%;
+}
+
+#tos {
+    text-decoration: none;
+    color: white;
 }
 
 /* .regImg {
