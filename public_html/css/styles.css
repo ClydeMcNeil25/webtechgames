@@ -16,7 +16,7 @@
 }
 
 .logoBrand {
-    width: 20rem;
+    width: 16rem;
     margin: auto;
     padding: auto;
 }
@@ -24,13 +24,6 @@
 .topAndBottomBorder {
     border-top: solid 1px white;
     border-bottom: solid 1px white;
-}
-
-.securePay {
-    width: 20rem;
-    margin: auto;
-    padding: auto;
-    text-align: center;
 }
 
 .whiteBorder {
