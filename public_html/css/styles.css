@@ -27,11 +27,11 @@
 }
 
 .whiteBorder {
-    border: solid 5px white;
+    border: solid 1px white;
 }
 
 .blackBorder {
-    border: solid 5px black;
+    border: solid 1px black; 
 }
 
 .button {
@@ -100,4 +100,21 @@ a, u {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+}
+
+#featured {
+    float: left;
+    width:  500px;
+    object-fit: cover;
+}
+#accessories {
+    float: left;
+    width:  250px;
+    height: 250px;
+    object-fit: cover;
+}
+#software {
+    float: left;
+    height:  90%;
+    object-fit: cover;
 }
